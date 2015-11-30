@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_calendar_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/background_dark"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/ibtn_calendar_layout_title_previous"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nav_left_arraw" />
+
+        <TextView
+            android:id="@+id/tv_calendar_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@+id/ibtn_calendar_layout_title_next"
+            android:layout_toRightOf="@id/ibtn_calendar_layout_title_previous"
+            android:gravity="center"
+            android:text="2015年7月"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/ibtn_calendar_layout_title_next"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nav_right_arraw" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+	    android:id="@+id/vp_calendar_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+</LinearLayout>
